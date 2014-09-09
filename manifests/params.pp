@@ -14,6 +14,8 @@ class backup::params {
     }
   }
 
+  $package_ensure = 'present'
+
   #TODO: will become hiera lookup
  
   # STORAGE S3 

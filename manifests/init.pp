@@ -10,6 +10,7 @@
 class backup (
   $package_name             = params_lookup( 'package_name' ),
   $provider_name            = params_lookup( 'provider_name' ),
+  $package_ensure           = params_lookup( 'package_ensure' ),
   $storage_s3               = params_lookup( 'storage_s3' ),
   $s3_access_key_id         = params_lookup( 's3_access_key_id' ),
   $s3_secret_access_key     = params_lookup( 's3_secret_access_key' ),

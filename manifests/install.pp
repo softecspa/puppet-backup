@@ -3,7 +3,7 @@
 class backup::install {
 
   package { $backup::package_name:
-    ensure    => present,
+    ensure    => $backup::package_ensure,
     provider  => $backup::provider_name,
   }
 }
